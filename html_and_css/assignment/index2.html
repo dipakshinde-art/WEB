@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <style type="text/css">
+      h1 {
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        font-size: 40px;
+        margin-top: 25px;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 900;
+        color: green;
+        font-family: sans-serif;
+        margin-top: -10px;
+      }
+      h2 + p {
+        font-style: italic;
+        margin-top: -18px;
+        font-size: 15px;
+        font-weight: 200;
+      }
+      h1 + p {
+        width: 45%;
+        text-align: center;
+        margin: auto;
+        font-family: poppins;
+        margin-top: 25px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 100;
+      }
+      p + p {
+        width: 70%;
+        margin: auto;
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 25px;
+      }
+      #container {
+        width: 70%;
+        margin: auto;
+        height: 370px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      #container > div {
+        width: 31%;
+        height: 390px;
+        border-radius: 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      div {
+        text-align: center;
+      }
+      button {
+        background-color: white;
+        border: 1px solid #0b0bff;
+        margin-top: 45px;
+        padding: 15px 40px;
+        border-radius: 5px;
+        color: #0b0bff;
+        font-weight: 800;
+      }
+      button:hover
+        {
+          cursor: pointer;
+          background-color:#022B57;
+          text-transform: uppercase;
+          color: white;
+        }
+      #blue {
+        color: white;
+        background-color: #0b0bff;
+      }
+      #blue:hover
+      {
+        color:#0b0bff;
+        background-color: white;
+      }
+      #bplan {
+        color: orange;
+      }
+      #preplan {
+        color: #0b0bff;
+      }
+
+      /* small */
+      @media only screen and (min-width: 60px) and (max-width: 420px) {
+        #container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: auto;
+          gap: 15px;
+        }
+        #container > div {
+          width: 100%;
+          margin: auto;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        /* text  */
+        h1
+        {
+          font-size: 22px;
+          width: 70%;
+          margin: auto;
+        }
+        h1+p{
+          font-size: 16px;
+          width: 70%;
+          margin: auto;
+          margin-top: 20px;
+        }
+        button
+        {
+          margin-top: 20px;
+         
+        }
+       
+        /* p+p{
+          font-size: 16px;
+          width: 70%;
+          color: red;
+          margin: auto;
+        } */
+
+      }
+
+      /* big */
+
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+        #container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+          gap: 15px;
+        }
+        #container > div {
+          width: 100%;
+          margin: auto;
+          flex-direction: column;
+          align-items: center;
+        }
+        h1
+        {
+          font-size: 26px;
+          width: 80%;
+          margin: auto;
+        }
+        h1+p{
+          font-size: 20px;
+          width: 70%;
+          margin: auto;
+          margin-top: 20px;
+          line-height: 24px;;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Choose a plan that right for your business</h1>
+    <p>
+      We collect reviews from our users so you can get an honest opinion of what
+      an experience with our website are really like!
+    </p>
+    <div id="container">
+      <div>
+        <h3>Starter plan</h3>
+        <h2>Free</h2>
+        <p>per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website are really like!
+        </p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h3>Business plan</h3>
+        <h2 id="bplan">$39.00</h2>
+        <p>per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website are really like!
+        </p>
+        <button id="blue">Start Now</button>
+      </div>
+      <div>
+        <h3>Premium plan</h3>
+        <h2 id="preplan">$59.00</h2>
+        <p>per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website are really like!
+        </p>
+        <button>Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>

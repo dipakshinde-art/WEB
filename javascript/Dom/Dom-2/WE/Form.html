@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basic form</title>
+  </head>
+  <body>
+    <div>
+      Name : <input id="name" type="text" placeholder="Enter your name" />
+    </div>
+
+    <div>
+      Age :
+      <input id="age" type="number" placeholder="Enter your correct Age " />
+    </div>
+    <div>
+      Gender :
+      <select id="gender">
+        <option value="">Select your Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div>
+      Email :
+      <input type="text" id="email" placeholder="Enter your email address" />
+    </div>
+    <div>
+      Mobile Number
+      <input type="text" id="mobile" placeholder="Enter your mobile number" />
+    </div>
+
+    <button id="submit">Submit</button>
+  </body>
+</html>
+
+<script>
+document.querySelector("#submit").addEventListener("click", display);
+
+function display() {
+
+    var n=document.querySelector("#name").value;
+    console.log(n);
+
+}
+
+</script>

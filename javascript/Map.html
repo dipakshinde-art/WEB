@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Map </title>
+
+<body>
+    <!-- map can not contain dubplicate key but 
+can contian dubplicate values -->
+    <h1>Map function in advance js</h1>
+
+    <script>
+        var map = new Map();
+        //set -adds or updates the key-value pairs to Map object.
+        map.set(1, "jQuery");
+        map.set(2, "AngularJS");
+        map.set(3, "Bootstrap");
+        map.set(4, "JS");
+        map.set(5, "Boot");
+
+        //delete- deletes the specified element from a Map object.
+        document.writeln("Size before invoking delete() method: " + map.size + "<br>");
+        map.delete(4);
+        document.writeln("Size after invoking delete() method: " + map.size + "<br><br>");
+
+        //get - returns the value of specified key.
+        document.writeln(map.get(1) + "<br>");
+        document.writeln(map.get(2) + "<br>");
+        document.writeln(map.get(3) + "<br><br>");
+        //key -returns an object of Map iterator that contains the keys for each element.
+        var itr = map.keys();
+        document.writeln(itr.next().value + "<br>");
+        document.writeln(itr.next().value + "<br>");
+        document.writeln(itr.next().value + "<br><br>"); //can use loop also
+        for (i = 0; i < map.size; i++) {
+            document.writeln(itr.next().value + "<br>");
+        }
+        //has -contains the specified key element.
+        document.writeln("Element present before invoking clear(): " + map.has(2) + "<br>");
+        map.clear();
+        document.writeln("Element present after invoking clear(): " + map.has(3) + "<br><br>");
+
+
+        // clear -removes all the elements from a Map object.
+        document.writeln("Size before invoking clear(): " + map.size + "<br>");
+        map.clear();
+        document.writeln("Size after invoking clear(): " + map.size);
+    </script>
+
+</body>
+
+</html>

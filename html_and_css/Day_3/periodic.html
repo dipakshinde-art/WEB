@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <style type="text/css">
+      .heading {
+        font-size: 25px;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        height: 350px;
+        display: flex;
+        margin-left: 20%;
+        margin-top: 10%;
+      }
+      .left {
+        width: 20%;
+        height: 100%;
+        display: flex;
+      }
+      .first {
+        margin-left: 8%;
+        margin-top: 10%;
+      }
+      .second {
+        margin-left: 8%;
+        margin-top: 11%;
+      }
+      .third {
+        margin-left: 8%;
+        margin-top: 15%;
+      }
+
+      .ez,
+      .e1,
+      .e2,
+      .e3,
+      .e4 {
+        border: 1px solid black;
+        background-color: #d93b19;
+        height: 30px;
+        width: 30px;
+        margin-top: 10%;
+        margin-left: 25%;
+        margin-bottom: 25%;
+        text-align: center;
+      }
+      .ez {
+        text-align: center;
+        margin: top 5px;
+      }
+      .e1 {
+        border: 1px solid black;
+        background-color: green;
+      }
+      .e2 {
+        border: 1px solid black;
+        background-color: pink;
+      }
+      #e2 {
+        background-color: white;
+        border: none;
+      }
+      .e3 {
+        border: 1px solid black;
+        background-color: #fcedea;
+      }
+      .e4 {
+        background-color: white;
+        border: none;
+      }
+
+      .middle {
+        width: 33%;
+        height: 100%;
+        margin-left: -55px;
+      }
+      .top_section {
+        width: 50%;
+        height: 30%;
+        background-color: green;
+        color: white;
+        margin-top: 4.1%;
+        display: flex;
+      }
+      .bottom-section {
+        width: 20%;
+        height: 100%;
+        display: flex;
+      }
+      .four {
+        margin-top: 7%;
+      }
+
+      .m4 {
+        border: 1px solid black;
+        background-color: blue;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+      .four,
+      .five,
+      .six,
+      .seven {
+        display: flex;
+      }
+      #si {
+        font-size: 25px;
+        margin-left: 10px;
+        color: black;
+      }
+      #nam {
+        font-size: 24px;
+        margin-top: 70px;
+        color: black;
+      }
+
+      .bottom-section {
+        width: 20%;
+        height: 100%;
+        display: flex;
+      }
+      .four {
+        margin-top: 6%;
+      }
+      #four {
+        margin-top: 7%;
+      }
+
+      .yellow {
+        border: 1px solid black;
+        background-color: yellow;
+        height: 30.4px;
+        width: 31px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+      .karba {
+        border: 1px solid black;
+        background-color: #581845;
+        height: 30.4px;
+        width: 31px;
+        margin-left: 9px;
+        margin-bottom: 8px;
+      }
+      .narngi {
+        border: 1px solid black;
+        background-color: #f15b1a;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+
+      .navi {
+        border: 1px solid black;
+        background-color: #e51af1;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+
+      .green {
+        border: 1px solid black;
+        background-color: #07e738;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+      .pink {
+        border: 1px solid black;
+        background-color: #f11a94;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+
+      .m4 {
+        border: 1px solid black;
+        background-color: blue;
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+      .four,
+      .five,
+      .six,
+      .seven {
+        display: flex;
+      }
+      .red {
+        background-color: white;
+        border: none;
+        height: 30px;
+        width: 30px;
+        margin-left: 12px;
+        margin-bottom: 8px;
+      }
+
+      .range {
+        width: 40%;
+        height: 50px;
+        margin: auto;
+        border: 1px solid black; 
+      }
+      .range1 {
+        width: 100%;
+        height: 50%;
+        background-color: green;
+        display: flex;
+      }
+      .range2 {
+        width: 100%;
+        height: 50%;
+        background-color: rgb(148, 185, 167);      
+        display: flex;
+       
+      }
+      .range11 {
+        width: 40px;
+        border: 1px solid black; 
+        color: white;    
+        
+      }
+      .range12 {
+        width: 40px;
+        border: 1px solid black;
+        color: black;
+        text-align: end;
+      }
+     #one{
+       text-align: center;
+     }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">The Periodic Table Of Elements</h1>
+
+    <div class="container">
+      <div class="left">
+        <div class="first">
+          <div class="ez">H</div>
+          <div class="e1"></div>
+          <div class="e1"></div>
+          <div class="e1"></div>
+          <div class="e1"></div>
+          <div class="e1"></div>
+          <div class="e1"></div>
+        </div>
+
+        <div class="second">
+          <div class="e2" id="e2"></div>
+          <div class="e2"></div>
+          <div class="e2"></div>
+          <div class="e2"></div>
+          <div class="e2"></div>
+          <div class="e2"></div>
+          <div class="e2"></div>
+        </div>
+        <div class="third">
+          <div class="e4"></div>
+          <div class="e4"></div>
+          <div class="e4"></div>
+          <div class="e4"></div>
+          <div class="e4"></div>
+          <div class="e3"></div>
+          <div class="e3"></div>
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="top_section">
+          <p style="text-align: left; margin: 5px">14</p>
+          <h2 id="si">Si</h2>
+          <h4 id="nam">Silicon</h4>
+        </div>
+
+        <div class="bottom_section">
+          <div class="four">
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+          </div>
+          <div class="five">
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+          </div>
+          <div class="six">
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+          </div>
+          <div class="seven">
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+            <div class="m4"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right_bottom">
+        <div class="four" id="four">
+          <div class="red"></div>
+          <div class="red"></div>
+          <div class="red"></div>
+
+          <div class="red"></div>
+          <div class="red"></div>
+          <div class="yellow"></div>
+        </div>
+        <div class="five">
+          <div class="navi"></div>
+          <div class="green"></div>
+          <div class="green"></div>
+
+          <div class="green"></div>
+          <div class="pink"></div>
+          <div class="yellow"></div>
+        </div>
+        <div class="six">
+          <div class="narngi"></div>
+          <div class="navi"></div>
+          <div class="green"></div>
+
+          <div class="green"></div>
+          <div class="pink"></div>
+          <div class="yellow"></div>
+        </div>
+        <div class="seven">
+          <div class="narngi"></div>
+          <div class="navi"></div>
+          <div class="navi"></div>
+
+          <div class="green"></div>
+          <div class="pink"></div>
+          <div class="yellow"></div>
+        </div>
+        <div class="six">
+          <div class="narngi"></div>
+          <div class="narngi"></div>
+          <div class="navi"></div>
+
+          <div class="navi"></div>
+          <div class="pink"></div>
+          <div class="yellow"></div>
+        </div>
+        <div class="seven">
+          <div class="narngi"></div>
+          <div class="narngi"></div>
+          <div class="narngi"></div>
+          <div class="navi"></div>
+          <div class="pink"></div>
+          <div class="yellow"></div>
+        </div>
+        <div class="seven">
+          <div class="karba"></div>
+          <div class="karba"></div>
+          <div class="karba"></div>
+          <div class="karba"></div>
+          <div class="karba"></div>
+          <div class="karba"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="range">
+      <div class="range1">
+        <div class="range11">La</div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+        <div class="range11"></div>
+      </div>
+      <div class="range2">
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12" id="one">Am</div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12"></div>
+        <div class="range12">No</div>
+
+      </div>
+    </div>
+  </body>
+</html>

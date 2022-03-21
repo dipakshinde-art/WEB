@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form id="form" action="">
+      Name : <input id="name" type="text" placeholder="Enter your name" />
+
+      Age :
+      <input id="age" type="number" placeholder="Enter your correct Age " />
+
+      Gender :
+      <select id="gender">
+        <option value="">Select your Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      mail :
+      <input type="text" id="email" placeholder="Enter your email address" />
+
+      Mobile Number
+      <input type="text" id="mobile" placeholder="Enter your mobile number" />
+
+      <input type="submit" />
+      <!-- //imp act as buttons -->
+    </form>
+
+    <div>
+      <h1> name </h1>
+      <h2>age </h2>
+      <h3>gender</h3>
+      <h4>mail</h4>
+      <bold>mobile</bold>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#form").addEventListener("submit", display); //button catch
+
+  function display() {
+    event.preventDefault(); // most imp thing prevent
+    var name = document.querySelector("#name").value;
+    var age = document.querySelector("#age").value;
+    var gender = document.querySelector("#gender").value;
+    var mail = document.querySelector("#email").value;
+    var mobile = document.querySelector("#mobile").value;
+
+    //display 
+ document.querySelector("h1").innerText=name;
+ document.querySelector("h2").innerText=age;
+ document.querySelector("h3").innerText=gender;
+ document.querySelector("h4").innerText=mail;
+ document.querySelector("bold").innerText=mobile;
+
+
+    console.log(name, age, gender, mail, mobile);
+  }
+</script>

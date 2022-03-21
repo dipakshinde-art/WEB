@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCD</title>
+    <style>
+      #container {
+        width: 90%;
+        height: 550px;
+        margin-top: 5%;
+        margin: auto;
+        background-color: #e6e6e6;
+      }
+      .flex-boxes {
+        width: 100%;
+        height: 170px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .flex-boxes>div{
+        width: 365px;
+        height:90%;
+        margin-top:25px;
+        background-color:white;
+        /* border: 1px solid blue; */
+        border-radius: 15px;
+
+      }
+      .innerbox{
+        width: 280px;
+        height:50px;
+        margin: auto;
+        margin-top:15px;
+        display:flex;
+        justify-content:space-between;
+      }
+
+      .innerbox >p{
+        color: #000000;
+        font-weight: 900;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+      }
+      .innerbox>p+p{
+        color: gold;
+      }
+      .innerbox~p{
+        width: 280px;
+        height:30px;
+        line-height: 20px;
+        margin: auto;
+        font-size: 15px;
+        margin-top:30px;
+        font-family: sans-serif;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- dont change any tags and id name -->
+    <!-- use borders to check for boxes -->
+    <!-- main container -->
+    <div id="container">
+      <div class="flex-boxes">
+
+        <div>
+          <!--class="innerbox" is the box where we have coffee name and price -->
+          <div class="innerbox">
+            <p>Cappuccino</p>
+            <p>$49</p>
+          </div>
+          <!--para with text - usage of internet  -->
+          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div>
+         
+          <div class="innerbox">
+            <p>Cappuccino</p>
+            <p>$49</p>
+          </div>
+         
+          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+
+        <div>
+         
+          <div class="innerbox">
+            <p>Cappuccino</p>
+            <p>$49</p>
+          </div>
+         
+          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        </div>
+
+
+        <div class="flex-boxes">
+
+          <div>
+            <div class="innerbox">
+              <p>Macchiato</p>
+              <p>$49</p>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid advance.
+            </p>
+          </div>
+
+          <div>
+            <div class="innerbox">
+              <p>Mocha</p>
+              <p>$49</p>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid advance.
+            </p>
+          </div>
+
+          <div>
+            <div class="innerbox">
+              <p>Coffee Latte</p>
+              <p>$49</p>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid advance.
+            </p>
+          </div>
+
+        </div>
+
+
+
+        <div class="flex-boxes">
+
+          <div>
+            <div class="innerbox">
+              <p>Piccolo Latte</p>
+              <p>$49</p>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid advance.
+            </p>
+          </div>
+
+
+          <div>
+            <div class="innerbox">
+              <p>Ristretto</p>
+              <p>$49</p>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid advance.
+            </p>
+          </div>
+
+          <div>
+            <div class="innerbox">
+              <p>Affogato</p>
+              <p>$49</p>
+            </div>
+            <p>
+              Usage of the Internet is becoming more common due to rapid advance.
+            </p>
+          </div>
+        </div>
+      
+    </div>
+  </body>
+</html>

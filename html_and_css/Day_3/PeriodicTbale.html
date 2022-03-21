@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <style>
+      #overview {
+        display: flex;
+        width: 80%;
+        margin: auto;
+      }
+      .heading {
+        font-size: 25px;
+        text-align: center;
+      }
+      .table1 {
+        margin-top: 10%;
+        margin-left: 18%;
+      }
+      #col_12 {
+        background-color: #d93b19;
+        text-align: center;
+        color: #fff;
+      }
+      .col_1 {
+        border: 1px solid black;
+        background-color: #158702;
+        height: 30px;
+        width: 30px;
+      }
+      .col_2 {
+        border: 1px solid black;
+        background-color: #f1889f;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        font-size: 16px;
+      }
+      .col_3 {
+        border: 5px solid black;
+        background-color: #fcedea;
+        height: 25px;
+        width: 25px;
+      }
+      #col_2,
+      #col_13,
+      #col_14,
+      #col_15,
+      #col_16,
+      #col_17 {
+        background-color: white;
+        border: none;
+      }
+      .table2,
+      .table3 {
+        margin-top: 10%;
+      }
+
+      .col_4,
+      .col_5,
+      .col_7,
+      .col_8,
+      .col_9,
+      .col_10,
+      .col_11,
+      .col_12 {
+        border: 1px solid black;
+        background-color: #2357f8;
+        height: 30px;
+        width: 30px;
+      }
+
+      .col_11,
+      .col_12 {
+        border: 1px solid black;
+        background-color: #2357f8;
+        height: 31px;
+        width: 31px;
+      }
+      #col_5,
+      #col_7,
+      #col_8,
+      #col_9,
+      #col_10,
+      #col_11,
+      #col_121 {
+        background-color: white;
+        border: none;
+      }
+
+      .col_13,
+      .col_14,
+      .col_15,
+      .col_16,
+      .col_17,
+      .col_18 {
+        border: 1px solid black;
+        background-color: black;
+        height: 30px;
+        width: 30px;
+      }
+      .col_18 {
+        border: 1px solid black;
+        background-color: yellow;
+        height: 30.4px;
+        width: 31px;
+      }
+      .col13k{
+        border: 1px solid black;
+        background-color: #581845;
+        height: 30.4px;
+        width: 31px;
+      }
+      .col13y{
+        border: 1px solid black;
+        background-color: #F15B1A;
+        height: 30px;
+        width: 30px;
+      }
+
+      .col13n{
+        border: 1px solid black;
+        background-color: #E51AF1;
+        height: 30px;
+        width: 30px;
+      }
+
+      .col13g{
+        border: 1px solid black;
+        background-color: #07e738;
+        height: 30px;
+        width: 30px;
+      }
+      .col13p{
+        border: 1px solid black;
+        background-color: #F11A94;
+        height: 30px;
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">The Periodic Table Of Elements</h1>
+    <div id="overview">
+
+      <div class="table1">
+        <table>
+          <tr>
+            <td class="col_1" id="col_12">H</td>
+            <td class="col_2" id="col_2"></td>
+          </tr>
+          <tr>
+            <td class="col_1"></td>
+            <td class="col_2"> 4 </td>
+          </tr>
+          <tr>
+            <td class="col_1"></td>
+            <td class="col_2"> 12</td>
+          </tr>
+          <tr>
+            <td class="col_1"></td>
+            <td class="col_2"> 20</td>
+          </tr>
+          <tr>
+            <td class="col_1"></td>
+            <td class="col_2">38</td>
+          </tr>
+          <tr>
+            <td class="col_1"></td>
+            <td class="col_2">56</td>
+            <td class="col_3"></td>
+          </tr>
+          <tr>
+            <td class="col_1"></td>
+            <td class="col_2">88</td>
+            <td class="col_3"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table2">
+          <div>
+            <table class="p1">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td class="col_6" id="col_6"></td>
+                  <td class="col_7" id="col_7"></td>
+                  <td class="col_8" id="col_8"></td>
+                  <td class="col_9" id="col_9"></td>
+                  <td class="col_10" id="col_10"></td>
+                  <td class="col_11" id="col_11"></td>
+                  <td class="col_12" id="col_121"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="col_5" id="col_5"></td>
+                  <td class="col_6" id="col_6"></td>
+                  <td class="col_7" id="col_7"></td>
+                  <td class="col_8" id="col_8"></td>
+                  <td class="col_9" id="col_9"></td>
+                  <td class="col_10" id="col_10"></td>
+                  <td class="col_11" id="col_11"></td>
+                  <td class="col_12" id="col_121"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="col_5" id="col_5"></td>
+                  <td class="col_6" id="col_6"></td>
+                  <td class="col_7" id="col_7"></td>
+                  <td class="col_8" id="col_8"></td>
+                  <td class="col_9" id="col_9"></td>
+                  <td class="col_10" id="col_10"></td>
+                  <td class="col_11" id="col_11"></td>
+                  <td class="col_12" id="col_121"></td>
+                </tr>
+               
+              </table>
+              <div>blcak</div>
+          </div>
+       
+
+        <table class="p2">
+          <tr>
+            <td class="col_4"></td>
+            <td class="col_5"></td>
+            <td class="col_6"></td>
+            <td class="col_7"></td>
+            <td class="col_8"></td>
+            <td class="col_9"></td>
+            <td class="col_10"></td>
+            <td class="col_11"></td>
+            <td class="col_12"></td>
+          </tr>
+          <tr>
+            <td class="col_4"></td>
+            <td class="col_5"></td>
+            <td class="col_6"></td>
+            <td class="col_7"></td>
+            <td class="col_8"></td>
+            <td class="col_9"></td>
+            <td class="col_10"></td>
+            <td class="col_11"></td>
+            <td class="col_12"></td>
+          </tr>
+          <tr>
+            <td class="col_4"></td>
+            <td class="col_5"></td>
+            <td class="col_6"></td>
+            <td class="col_7"></td>
+            <td class="col_8"></td>
+            <td class="col_9"></td>
+            <td class="col_10"></td>
+            <td class="col_11"></td>
+            <td class="col_12"></td>
+          </tr>
+          <tr>
+            <td class="col_4"></td>
+            <td class="col_5"></td>
+            <td class="col_6"></td>
+            <td class="col_7"></td>
+            <td class="col_8"></td>
+            <td class="col_9"></td>
+            <td class="col_10"></td>
+            <td class="col_11"></td>
+            <td class="col_12"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table3">
+        <table>
+          <tr>
+            <td class="col_13" id="col_13"></td>
+            <td class="col_14" id="col_14"></td>
+            <td class="col_15" id="col_15"></td>
+            <td class="col_16" id="col_16"></td>
+            <td class="col_17" id="col_17"></td>
+            <td class="col_18"></td>
+          </tr>
+          <tr>
+            <td class="col_13 col13n"></td>
+            <td class="col_14 col13g"></td>
+            <td class="col_15 col13g"></td>
+            <td class="col_16 col13g"></td>
+            <td class="col_17 col13p"></td>
+            <td class="col_18"></td>
+          </tr>
+          <tr>
+            <td class="col_13 col13y"></td>
+            <td class="col_14 col13n"></td>
+            <td class="col_15 col13g"></td>
+            <td class="col_16 col13g"></td>
+            <td class="col_17 col13p"></td>
+            <td class="col_18"></td>
+          </tr>
+          <tr>
+            <td class="col_13 col13y"></td>
+            <td class="col_14 col13n"></td>
+            <td class="col_15 col13n"></td>
+            <td class="col_16 col13g"></td>
+            <td class="col_17 col13p"></td>
+            <td class="col_18"></td>
+          </tr>
+          <tr>
+            <td class="col_13 col13y"></td>
+            <td class="col_14 col13y"></td>
+            <td class="col_15 col13n"></td>
+            <td class="col_16 col13n"></td>
+            <td class="col_17 col13p"></td>
+            <td class="col_18"></td>
+          </tr>
+          <tr>
+            <td class="col_13 col13y"></td>
+            <td class="col_14 col13y"></td>
+            <td class="col_15 col13y"></td>
+            <td class="col_16 col13n "></td>
+            <td class="col_17 col13p "></td>
+            <td class="col_18 "></td>
+          </tr>
+          <tr>
+            <td class="col_13 col13k"></td>
+            <td class="col_14 col13k"></td>
+            <td class="col_15 col13k"></td>
+            <td class="col_16 col13k"></td>
+            <td class="col_17 col13k"></td>
+            <td class="col_18 col_13_k"></td>
+          </tr>
+        </table>
+      </div>
+   
+    </div>
+  </body>
+</html>

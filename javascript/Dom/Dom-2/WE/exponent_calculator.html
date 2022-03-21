@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exponent</title>
+</head>
+<body>
+    <input id="first" type="number" placeholder="first number" /> </br>
+    <input id="second" type="number" placeholder="Second number" /> </br>
+
+    <button id="output">Click here to find the exponent!</button>
+    <p></p>
+</body>
+</html>
+
+<script>
+
+document.querySelector("#output").addEventListener("click", Expo);
+
+function Expo(){
+
+//alert(document.querySelector("#first").value);
+ //console.log(first)
+ var first=document.querySelector("#first").value;
+ var second=document.querySelector("#second").value;
+
+var expo=1;
+ for(var i=0;i<second;i++){
+ expo=expo*first;
+      document.querySelector("p").innerText=expo;
+ }
+}
+
+
+</script>
