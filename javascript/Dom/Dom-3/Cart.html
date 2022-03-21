@@ -19,18 +19,18 @@
       #Pnames {
         color: grey;
         margin-left: 30px;
-      }
-
-      #prices {
+      }  
+      #Prices {
+       
+        width: 80%;
+        margin: auto;
         display: flex;
-        justify-content: center;
-      }
-      #new_price,#old_price {
-        margin-left: 30px;
-      }
-      /* #old_price {
-        margin-left: 45%;
-      } */
+        justify-content: space-around;
+
+      }   
+      #op{
+    margin-top:20px;
+      } 
     </style>
   </head>
   <body>
@@ -72,6 +72,7 @@
 
   data.map(function (el) {
     var divs = document.createElement("div");
+
     var img = document.createElement("img");
     img.src = el.imgUrl;
 
@@ -79,18 +80,19 @@
     Pname.textContent = el.name;
     Pname.setAttribute("id", "Pnames");
 
-    // var price_div = document.createElement("div");
-    // price_div.setAttribute("id", "prices");
+    //div for price flex
+    var price_div = document.createElement("div");
+    price_div.setAttribute("id", "Prices");
 
-    var New_price = document.createElement("h2");
+    var New_price = document.createElement("h3");
     New_price.textContent = el.price;
-    New_price.setAttribute("id", "new_price");
-
     var old_price = document.createElement("strike");
     old_price.textContent = el.strikedOffPrice;
-    old_price.setAttribute("id", "old_price");
+    old_price.setAttribute("id", "op")
+    price_div.append(New_price, old_price);
 
-    divs.append(img, Pname, New_price, old_price);
+    //main div
+    divs.append(img, Pname, price_div);
     document.querySelector("#container").append(divs);
   });
 </script>
