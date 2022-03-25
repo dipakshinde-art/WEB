@@ -65,6 +65,7 @@ function display() {
   
   TR.append(img_tex, TD2, TD3, TD4, TD5, TD6, TD7, TD8);
   document.querySelector("tbody").append(TR);
+  
   document.querySelector("#image").value=""
   document.querySelector("#name").value = "";
   document.querySelector("#batch").value = "";
