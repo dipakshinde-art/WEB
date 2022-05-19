@@ -1,0 +1,61 @@
+#todoApp {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 50%;
+  height: 70vh;
+  margin: auto;
+}
+
+.input_value #inid {
+  width: 50%;
+  height: 50px;
+  border-radius: 1rem;
+  border: 1px solid rgb(220, 211, 211);
+  /* border: 1px solid black; */
+}
+
+#inid::placeholder {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+#todo_add {
+  margin: 1rem;
+  padding: 12px 22px;
+  border-radius: 1rem;
+  border: 1px solid rgb(220, 211, 211);
+  background-color: white;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  /* border: 1px solid black; */
+}
+.headers div button {
+  padding: 10px 15px;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  font-size: 14px;
+  border:none;
+}
+.headers img {
+  width: 100px;
+  height: 100px;
+}
+.love {
+  width: 50%;
+  margin: auto;
+  /* border: 1px solid red; */
+  background-color: #ffa500;
+}
+.footers h1 {
+  margin: 2rem;
+}
+.apple{
+  background-color: #f5f5f5;
+}

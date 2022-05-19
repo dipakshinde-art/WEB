@@ -1,0 +1,36 @@
+.delete {
+  padding: 10px 20px;
+  border-radius: 1rem;
+  border: 1px solid rgb(220, 211, 211);
+  margin-right: 1rem;
+}
+.list {
+  width: 65%;
+  height: 50px;
+  margin: auto;
+  list-style-type: square;
+  /* border: 1px solid red; */
+  margin-left: 5rem;
+}
+li:nth-child(odd) {
+  background: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+li:nth-child(even) {
+  background: rgb(77, 190, 77);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.list button {
+  border: 1px solid black;
+}
+.pval{
+  margin-left: 1rem;
+}
